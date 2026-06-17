@@ -111,6 +111,7 @@ terraform plan
 
 - [Project Notes](docs/project-notes.md)
 - [Architecture Documentation](docs/architecture.md)
+- [Project Dashboard](docs/dashboard.html)
 
 ## Current Status
 
