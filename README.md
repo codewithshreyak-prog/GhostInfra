@@ -107,6 +107,10 @@ terraform fmt -recursive
 terraform validate
 terraform plan
 ```
+## Documentation
+
+- [Project Notes](docs/project-notes.md)
+- [Architecture Documentation](docs/architecture.md)
 
 ## Current Status
 
