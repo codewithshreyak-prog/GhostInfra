@@ -112,6 +112,7 @@ terraform plan
 - [Project Notes](docs/project-notes.md)
 - [Architecture Documentation](docs/architecture.md)
 - [Project Dashboard](docs/dashboard.html)
+- [Live Project Dashboard](https://codewithshreyak-prog.github.io/GhostInfra/)
 
 ## Current Status
 
