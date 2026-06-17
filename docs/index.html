@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GhostInfra Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    header {
+      background: #020617;
+      padding: 40px;
+      text-align: center;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    header h1 {
+      color: #38bdf8;
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h2 {
+      color: #38bdf8;
+      margin-top: 0;
+    }
+
+    .status {
+      font-size: 32px;
+      font-weight: bold;
+      color: #22c55e;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    .architecture {
+      background: #020617;
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid #334155;
+      white-space: pre-wrap;
+      font-family: monospace;
+      color: #93c5fd;
+      overflow-x: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #064e3b;
+      color: #bbf7d0;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>GhostInfra</h1>
+    <p>Modular AWS Infrastructure as Code using Terraform</p>
+    <span class="badge">Plan-Only Mode · Cost-Safe Cloud Project</span>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <h2>Terraform Status</h2>
+        <p class="status">Validated</p>
+        <p>Terraform configuration was successfully validated using <strong>terraform validate</strong>.</p>
+      </div>
+
+      <div class="card">
+        <h2>Project Mode</h2>
+        <p class="status">Safe</p>
+        <p>No active Terraform-managed AWS resources are running. The project is maintained in plan-only mode.</p>
+      </div>
+
+      <div class="card">
+        <h2>Modules Completed</h2>
+        <p class="status">3</p>
+        <p>VPC, Security, and EC2 modules are implemented.</p>
+      </div>
+
+      <div class="card">
+        <h2>GitHub Release</h2>
+        <p class="status">v1.0.0</p>
+        <p>Initial release completed with documentation, workflow, and modular Terraform code.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Implemented Modules</h2>
+      <ul>
+        <li><strong>VPC Module:</strong> Custom VPC, public subnets, private subnets, internet gateway, route table, and associations.</li>
+        <li><strong>Security Module:</strong> Web security group and database security group with layered access control.</li>
+        <li><strong>EC2 Module:</strong> Amazon Linux web server definition with Nginx user data script.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>High-Level Architecture</h2>
+      <div class="architecture">
+User
+ |
+ | HTTP Traffic
+ |
+Internet
+ |
+Internet Gateway
+ |
+Public Route Table
+ |
+Public Subnet
+ |
+EC2 Web Server
+ |
+Security Group Rules
+ |
+Private Subnet
+ |
+Future RDS Database
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>What This Project Demonstrates</h2>
+      <ul>
+        <li>Infrastructure as Code using Terraform</li>
+        <li>Reusable Terraform module design</li>
+        <li>AWS VPC networking fundamentals</li>
+        <li>Public and private subnet architecture</li>
+        <li>Security group design for layered access</li>
+        <li>EC2 infrastructure definition</li>
+        <li>GitHub Actions for Terraform validation</li>
+        <li>Cost-conscious cloud development</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    GhostInfra · Terraform · AWS · Infrastructure as Code
+  </footer>
+</body>
+</html>
